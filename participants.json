@@ -1,0 +1,7 @@
+{
+  "age" : {"Description" : "age of participant"},
+  "sex" : {"Description" : "sex of participant"},
+  "EEG_correct_quiz_questions" : {"Description" : "participant's score on yes/no questionnaire concerning contents of story during EEG data acquisition, with 5 questions following each of the 4 sections of the audio book"},
+  "fMRI_correct_quiz_questions" : {"Description" : "participant's score on yes/no questionnaire concerning contents of story during fMRI data acquisition, with 5 questions following each of the 4 sections of the audio book"},
+  "total_quiz_questions" : {"Description" : "the total number of yes/no quiz questions the participant was asked"}
+}
