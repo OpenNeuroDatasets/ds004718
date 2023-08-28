@@ -1,12 +1,12 @@
 {
-  "Name": "Le Petit Prince Hong Kong: Naturalistic fMRI and EEG dataset in older Cantonese speakers",
-  "BIDSVersion": "1.12.0",
-  "License": "CC0",
-  "Authors": [
-    "Mohammad Momenian",
-    "Zhengwu Ma",
-    "Shuyi Wu",
-    "Chengcheng Wang",
-    "Jixing Li"
-  ]
+    "Name": "Le Petit Prince Hong Kong: Naturalistic fMRI and EEG dataset from older Cantonese speakers",
+    "BIDSVersion": "1.12.0",
+    "License": "CC0",
+    "Authors": [
+        "Mohammad Momenian",
+        "Zhengwu Ma",
+        "Shuyi Wu",
+        "Chengcheng Wang",
+        "Jixing Li"
+    ]
 }
