@@ -12,5 +12,3 @@
 bidsignore
 quiz/*.CSV
 quiz/*.txt
-annotation/*.xlsx
-annotation/*.xls
