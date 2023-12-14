@@ -12,3 +12,5 @@
 bidsignore
 quiz/*.CSV
 quiz/*.txt
+codes/*.py
+codes/*.m
