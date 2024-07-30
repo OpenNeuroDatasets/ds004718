@@ -5,7 +5,7 @@
 
 ### Project info ###
 
-Data acquisition for this project started in July 2021 and ended in December 2022.
+Data acquisition for this project started in July, 2021 and ended in December, 2022.
 
 ### Access ###
 
@@ -45,7 +45,7 @@ tools. Quality diagnostics of the MRI and EEG data confirm their robustness,
 positioning this database as a valuable resource for studying the spatiotemporal 
 dynamics of language comprehension in older adults.
 
-### Dataset contents ###
+### Dataset Contents ###
 
 The datasets includes:
 1. raw EEG and fMRI data 
@@ -53,6 +53,6 @@ The datasets includes:
 3. behavioral results
 4. audio and text annotations
 
-For detailed file information and folder organization, please refer to 
+For detailed file information and folder organization, please refer to the drscription paper: 
 https://doi.org/10.1101/2024.04.24.590842. 
 
