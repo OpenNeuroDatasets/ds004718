@@ -1,1 +1,55 @@
-Currently, the field of neurobiology of language is based on data from only a few Indo-European languages. The majority of this data comes from younger adults neglecting other age groups. Here we present a multimodal database which consists of task-based and resting state fMRI, structural MRI, and EEG data while participants over 65 years old listened to sections of the story The Little Prince in Cantonese. We also provide data on participants’ language history, lifetime experiences, linguistic and cognitive skills. Audio and text annotations, including time-aligned speech segmentation and prosodic information, as well as word-by-word predictors such as frequency and part-of-speech tagging derived from natural language processing (NLP) tools are included in this database. Both MRI and EEG data diagnostics revealed that the data has good quality. This multimodal database could advance our understanding of spatiotemporal dynamics of language comprehension in the older population and help us study the effects of healthy aging on the relationship between brain and behaviour.
+# The LPPHK Project #
+
+## Notes ##
+
+### Project info ###
+
+Data acquisition for this project started in July, 2021 and ended in December 2022.
+
+### Access ###
+
+A complete analysis of this dataset can be found in the published data description 
+paper "Le Petit Prince Hong Kong (LPPHK): Naturalistic fMRI and EEG 
+Data from Older Cantonese Speakers", https://doi.org/10.1101/2024.04.24.590842
+
+### Contact ###
+
+For any question regarding this data, please contact:
+1. Prof. Mohammad Momenian, mohammad.momenian@polyu.edu.hk, 0000-0002-0310-8549
+2. Ms. Zhengwu Ma, zhengwuma2-c@my.cityu.edu.hk, 0009-0004-8523-8639
+3. Ms. Chengcheng Wang, cwang495-c@my.cityu.edu.hk, 0009-0000-6974-1358
+
+## Overview ##
+
+### Background and Aim ###
+
+In the field of neurobiology of language, existing research predominantly 
+focuses on data from a limited number of Indo-European languages and primarily
+involves younger adults, overlooking other age groups. This experiment aims to 
+address these gaps by creating a comprehensive multimodal database. The primary 
+goal is to advance our understanding of language processing in older adults and 
+the impact of healthy aging on brain-behavior relationships. 
+
+### Method and Design ###
+The experiment involves collecting task-based and resting-state fMRI, structural 
+MRI, and EEG data from 52 healthy right-handed older Cantonese participants over 
+65 years old as they listen to excerpts from “The Little Prince” in Cantonese. 
+Additionally, the database includes detailed information on participants’ language 
+history, lifetime experiences, linguistic and cognitive skills, as well as extensive 
+audio and text annotations, such as time-aligned speech segmentation and prosodic 
+features, along with word-by-word predictors from natural language processing (NLP) 
+tools. Quality diagnostics of the MRI and EEG data confirm their robustness, 
+positioning this database as a valuable resource for studying the spatiotemporal 
+dynamics of language comprehension in older adults.
+
+### Dataset contents ###
+
+The datasets includes:
+1. raw EEG and fMRI data 
+2. preprocessed EEG and fMRI data
+3. behavioral results
+4. audio and text annotations
+
+For detailed file information and folder organization, please refer to 
+https://doi.org/10.1101/2024.04.24.590842. 
+
