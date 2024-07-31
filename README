@@ -1,5 +1,4 @@
 ## Overview
-### Background
 In the field of neurobiology of language, existing research predominantly 
 focuses on data from a limited number of Indo-European languages and primarily
 involves younger adults, overlooking other age groups. This experiment aims to 
@@ -42,7 +41,7 @@ The study consisted of an fMRI session and an EEG session. The order of the EEG 
 sessions was counterbalanced across all participants, and a minimum two-week interval was 
 maintained between sessions. 
 
-#### fMRI experiment. 
+#### fMRI experiment
 Before the scanning day, an MRI safety screening form was sent to the 
 participants to make sure MRI scanning was safe for them. We also sent them simple readings
 and videos about MRI scanning so that they could have an idea of what it would be like to 
@@ -60,13 +59,13 @@ yes/no questions (20 questions in total) on the content they had listened to. Th
 were presented on the screen, with participants indicating their answers by pressing a button. 
 The session concluded with the collection of resting-state fMRI data. 
  
-#### Cognitive tasks. 
+#### Cognitive tasks
 Four cognitive tasks were selected to assess participants’ cognitive abilities 
 in various domains, including the forward digit span task, picture naming task, verbal fluency 
 task, and Flanker task. These tasks were delivered after the fMRI session in a separate soundproof 
 booth.
  
-#### EEG experiment. 
+#### EEG experiment
 During the EEG experiment, participants were seated comfortably in a quiet room 
 and standard procedures were followed for electrode placement and EEG cap preparation. Participants 
 were instructed to focus on a fixation sign displayed on a monitor. The EEG recording was then 
@@ -79,18 +78,17 @@ They indicated their answers by pressing a button. The EEG recording was conduct
 throughout all four runs until their completion.
 
 #### Questionnaires. 
-We administered LHQ3 and the Lifetime of Experiences Questionnaire14 (LEQ) during 
+We administered LHQ3 and the Lifetime of Experiences Questionnaire (LEQ) during 
 EEG cap preparation. The participants did not need to move or fill in these questionnaires 
 themselves; a research assistant asked the questions one by one in Cantonese and input the 
 responses in an online Google form. LHQ is designed to document language history by producing 
 aggregate scores for language proficiency, exposure, and dominance in all the languages spoken 
-by the participants (See Figure 2e). LEQ is a tool to document what sorts of activities (e.g. 
-sports, music, education, profession, etc) participants engage in over their lifetime. 
-It measures lifetime experiences in three periods of life: from 13 to 30 (young adulthood), 
-from 30 to 65 (midlife), and after 65 (late life). LEQ produces a total score (see lpp_LEQ.tsv 
-in the OpenNeuro) which is an indication of cognitive activity. Collecting data using these two 
-questionnaires allowed us to have a thicker description of our participants’ linguistic, social, 
-and cognitive experiences. 
+by the participants. LEQ is a tool to document what sorts of activities (e.g. sports, music, 
+education, profession, etc) participants engage in over their lifetime. It measures lifetime 
+experiences in three periods of life: from 13 to 30 (young adulthood), from 30 to 65 (midlife), 
+and after 65 (late life). LEQ produces a total score (see lpp_LEQ.tsv) which is an indication 
+of cognitive activity. Collecting data using these two questionnaires allowed us to have a 
+thicker description of our participants’ linguistic, social, and cognitive experiences. 
 
 ### Acquisition
 The MRI data were collected at the University Research Facility in Behavioral and Systems
@@ -157,18 +155,18 @@ v2 tagset22 (UDv2).
 ### Preprocessing
 All MRI data were preprocessed using the NeuroScholar cloud platform (http://www.humanbrain.cn, 
 Beijing Intelligent Brain Cloud, Inc.), provided by The Hong Kong Polytechnic University. This 
-platform uses an enhanced pipeline based on fMRIPrep15,16 20.2.6  (RRID: SCR_016216) and supported 
-by Nipype17 1.7.0 (RRID: SCR_002502). Then we used the pydeface (https://github.com/poldracklab/pydeface) 
+platform uses an enhanced pipeline based on fMRIPrep 20.2.6  (RRID: SCR_016216) and supported 
+by Nipype 1.7.0 (RRID: SCR_002502). Then we used the pydeface (https://github.com/poldracklab/pydeface) 
 package to remove the voxels corresponding to the faces from both anatomical and preprocessed data to 
 anonymize participants’ facial information.
 
 #### Anatomical MRI. 
-The structural MRI data underwent intensity non-uniformity correction, skull-stripping, 
-and brain tissue segmentation of cerebrospinal fluid (CSF), white matter (WM), and gray matter (GM) 
-based on the reference T1w image. The resulting anatomical images were nonlinearly aligned to the 
-ICBM 152 Nonlinear Asymmetrical template version 2009c (MNI152NLin2009cAsym) template brain. Radiological 
-reviews were performed on MRI images by a medical specialist in the lab. Incidental findings were noticed 
-for participants sub-HK031 and sub-HK049. There was a sub-centimeter (0.7cm) blooming artefact in the right 
+The structural MRI data underwent intensity non-uniformity correction, skull-stripping, and brain 
+tissue segmentation of cerebrospinal fluid (CSF), white matter (WM), and gray matter (GM) based on 
+the reference T1w image. The resulting anatomical images were nonlinearly aligned to the ICBM 152 
+Nonlinear Asymmetrical template version 2009c (MNI152NLin2009cAsym) template brain. Radiological reviews 
+were performed on MRI images by a medical specialist in the lab. Incidental findings were noticed for 
+participants sub-HK031 and sub-HK049. There was a sub-centimeter (0.7cm) blooming artefact in the right 
 putamen, likely a cavernoma for participant sub-HK031. For participant sub-HK049, there was a left thalamic 
 (0.7cm) oval-shaped susceptibility artefact and a 2.6 cm cystic collection in the right posterior fossa.
  
@@ -181,11 +179,11 @@ spatially normalize functional images into Montreal Neurological Institute (MNI)
 by a 6mm FWHM (full-width half-maximum) Gaussian kernel.
 
 #### EEG. 
-The pre-processing was carried out using EEGLAB19 and in-house MATLAB functions. The preprocessing of 
+The pre-processing was carried out using EEGLAB and in-house MATLAB functions. The preprocessing of 
 EEG data included the following steps: (1) a cutoff frequency filter with 1 Hz high pass and 40.0 Hz low 
 pass cut-off was applied followed by a notch filter at 50 Hz to reduce electrical line noise, (2) use of 
 kurtosis measure to identify and remove bad channels, (3) application of the RUNICA algorithm (from EEGLab 
-toolbox, 2023  version), a machine learning algorithm that evaluates ICA-derived components, for automated 
+toolbox, 2023 version), a machine learning algorithm that evaluates ICA-derived components, for automated 
 rejection of artifacts, including signal noise from eye and muscle, high-amplitude artifacts (e.g., blinks), 
 and signal discontinuities (e.g., electrodes losing contact with the scalp), (4) interpolating data for bad 
 channels using spherical splines for each segment. (5) re-referencing the data by using both electrodes M1 
@@ -193,77 +191,47 @@ and M2 as the reference for all channels and (6) down-sampling all the data to 2
 
 ### Dataset Structure
 #### Participant responses
-Location: participants.json, participants.tsv
-
-File format: tab-separated value
-
-Participants’ sex, age, and accuracy of quiz questions for each fMRI and EEG experiment in 
-tab-separated value (tsv) files. Data is structured as one line per participant.
+1. Location: participants.json, participants.tsv
+2. File format: tab-separated value
+3. Participants’ sex, age, and accuracy of quiz questions for each fMRI and EEG experiment in tab-separated 
+value (tsv) files. Data is structured as one line per participant.
 
 #### Audio files 
-Location: stimuli/task-lppHK_run-1[2-4].wav
+1. Location: stimuli/task-lppHK_run-1[2-4].wav
+2. File format: wav
+3. The 4-section audiobook from The Little Prince in Cantonese
 
-File format: wav
-
-The 4-section audiobook from The Little Prince in Cantonese
-
-#### Anatomical data files
- 
-Location: sub-HK<ID>/anat/sub-HK<ID>_T1w.nii.gz
-
-File format: NIfTI, gzip-compressed
-
-The raw high-resolution anatomical image after defacing.
+#### Anatomical data files 
+1. Location: sub-HK<ID>/anat/sub-HK<ID>_T1w.nii.gz
+2. File format: NIfTI, gzip-compressed
+3. The raw high-resolution anatomical image after defacing
 
 #### Functional data files
-
-Location: sub-HK<ID>/func/sub-HK<ID>_task-lppHK_run-1[2–4]_bold.nii.gz
-
-File format: NIfTI, gzip-compressed.
-
-Sequence protocol: 
-
-sub-HK<ID>/func/sub-HK<ID>_task-lppHK_run-1[2–4]_bold.json.
-	
-The preprocessed data are also available as:
-
-derivatives/sub-HK<ID>/func/sub-HK<ID>_task-lppHK_run-1[2–4]_desc-preprocessed_bold.nii.gz
+1. Location: sub-HK<ID>/func/sub-HK<ID>_task-lppHK_run-1[2–4]_bold.nii.gz
+2. File format: NIfTI, gzip-compressed.
+3. Sequence protocol: sub-HK<ID>/func/sub-HK<ID>_task-lppHK_run-1[2–4]_bold.json.
+4. The preprocessed data are also available as:derivatives/sub-HK<ID>/func/sub-HK<ID>_task-lppHK_run-1[2–4]_desc-preprocessed_bold.nii.gz
 
 #### Resting-state MRI data files
-Location: sub-HK<ID>/func/sub-HK<ID>_task-rest_bold.nii.gz
-
-File format: NIfTI, gzip-compressed.
-
-Sequence protocol: 
-
-sub-HK<ID>/func/sub-HK<ID>_task-rest_bold.json.
-
-The preprocessed data are also available as:
-
-derivatives/sub-HK<ID>/func/sub-HK<ID>_rest_bold.nii.gz.
+1. Location: sub-HK<ID>/func/sub-HK<ID>_task-rest_bold.nii.gz
+2. File format: NIfTI, gzip-compressed
+3. Sequence protocol: sub-HK<ID>/func/sub-HK<ID>_task-rest_bold.json.
+4. The preprocessed data are also available as: derivatives/sub-HK<ID>/func/sub-HK<ID>_rest_bold.nii.gz
 
 #### EEG data files
-Location: sub-HK<ID>/eeg/sub-HK<ID>_task-lppHK_eeg.set
-
-File format: set (a type of MATLAB file, with a file in the .fdt extension containing raw data)
-
-The preprocessed data are also available as:
-
-derivatives/sub-HK<ID>/eeg/sub-HK<ID>_task-lppHK_eeg.set (together with a file in the .fdt extension containing raw data)
+1. Location: sub-HK<ID>/eeg/sub-HK<ID>_task-lppHK_eeg.set
+2. File format: set (a type of MATLAB file, with a file in the .fdt extension containing raw data)
+3. The preprocessed data are also available as: derivatives/sub-HK<ID>/eeg/sub-HK<ID>_task-lppHK_eeg.set (together with a file in the .fdt extension containing raw data)
 
 #### Annotations
-Location: annotation/snts.txt, annotation/lppHK_word_information.txt, annotation/wav_acoustic.csv
-
-File format: comma-separated value
-
-Annotation of speech and linguistic features for the audio and text of the stimuli.
+1. Location: annotation/snts.txt, annotation/lppHK_word_information.txt, annotation/wav_acoustic.csv
+2. File format: comma-separated value
+3. Annotation of speech and linguistic features for the audio and text of the stimuli
 
 #### Quiz questions
-Location: quiz/lppHK_quiz_questions.csv
-
-File format: comma-separated value
-
-The 20 yes/no quiz questions were employed in both the fMRI and EEG experiments.
+1. Location: quiz/lppHK_quiz_questions.csv
+2. File format: comma-separated value
+3. The 20 yes/no quiz questions were employed in both the fMRI and EEG experiments
 
 ## Usage Note
 If you want to know more about the dataset, please refer to our paper "Le Petit Prince Hong 
