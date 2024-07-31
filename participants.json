@@ -1144,7 +1144,7 @@
     "L.L.Spec3": {
         "Description": "Are you currently an active member of any social clubs or groups?",
         "Levels": {
-            "0": "No"
+            "0": "No",
             "1": "1",
             "2": "2",
             "3": "3",
@@ -1158,7 +1158,7 @@
     "L.L.Spec4": {
         "Description": "Do you do any charity or volunteer work?",
         "Levels": {
-            "0": "No"
+            "0": "No",
             "1": "1",
             "2": "2",
             "3": "3",
