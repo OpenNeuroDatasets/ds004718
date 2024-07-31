@@ -1090,7 +1090,7 @@
         "Description": "Have you retired? Sort of (= part-time or casual ongoing paid work) What is the main occupation classification?",
         "Levels": {
             "1": "Managers",
-            "2": "Professionals",,
+            "2": "Professionals",
             "3": "Associate Professionals / Running Own Business",
             "4": "Tradespersons and related workers",
             "5": "Advanced clerical and service workers",
