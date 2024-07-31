@@ -1106,12 +1106,13 @@
             "0": "No",
             "1": "Yes"
 										}
+    },
     "L.L.Spec1c_ii": {
         "Description": "Have you retired? No (= full-time ongoing paid work) Number of hours of paid work per week?",
         "Units": "hours"
     },
     "L.L.Spec1c_iii": {
-        "Description": "Have you retired? No (= full-time ongoing paid work) What is the main occupation title?",
+        "Description": "Have you retired? No (= full-time ongoing paid work) What is the main occupation title?"
     },
     "L.L.Spec1c_iv": {
         "Description": "Have you retired? No (= full-time ongoing paid work) What is the main occupation classification?",
@@ -1138,7 +1139,7 @@
 										}
     },
     "L.L.Spec2b": {
-        "Description": "Do you currently reside. Other arrangement",
+        "Description": "Do you currently reside. Other arrangement"
     },
     "L.L.Spec3": {
         "Description": "Are you currently an active member of any social clubs or groups?",
