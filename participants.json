@@ -25,18 +25,12 @@
       "fMRI_accuracy_quiz_questions" : {
         "Description" : "participant's accuracy rate on yes/no questionnaire concerning contents of story during fMRI data acquisition"
     },
-      "scan_run1": {
-        "Description" : "scan numbers of fMRI first run"
+      "EEG_appointment": {
+        "Description" : "EEG appointment time of participant"
     },
-      "scan_run2": {
-        "Description" : "scan numbers of fMRI second run"
+      "fMRI_appointment": {
+        "Description" : "fMRI appointment time of participant"
     },							
-      "scan_run3": {
-        "Description" : "scan numbers of fMRI third run"
-    },
-      "scan_run4": {
-        "Description" : "scan numbers of fMRI forth run"
-    },
       "Y.L.SpecQ1": {
         "Description": "How many years of Primary School did you complete?",
         "Units": "years"
