@@ -15,4 +15,4 @@ quiz/*.txt
 codes/*.py
 codes/*.m
 stimuli/*.wav
-behavioral_results/*.csv
+behavioral_results/
