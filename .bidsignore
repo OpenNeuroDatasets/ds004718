@@ -1,4 +1,4 @@
-# output of acpc detect
+# Output of acpc detect
 *.txt
 *.ppm
 *.png
@@ -8,9 +8,8 @@
 *.tif
 *.xlsx
 *.csv
-*.TextGrid
-bidsignore
-quiz/*.CSV
+*.textgrid
+quiz/*.csv
 quiz/*.txt
 codes/*.py
 codes/*.m
